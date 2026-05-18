@@ -91,6 +91,14 @@
   align-items: center;
 }
 
+.heroImageReal {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+}
+
 .imagePlaceholder {
   width: 300px;
   height: 300px;

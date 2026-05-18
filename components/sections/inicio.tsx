@@ -67,9 +67,11 @@ export default function Inicio({ onNavigate }: InicioProps) {
             </p>
           </div>
           <div className={styles.heroImage}>
-            <div className={styles.imagePlaceholder} role="img" aria-label="Estudiantes aprendiendo inglés online">
-              <span className={styles.imageIcon}>🎓</span>
-            </div>
+            <img
+              src="/images/estudiante-certificado.png"
+              alt="Estudiante mostrando su certificado de Cambridge English en una clase online"
+              className={styles.heroImageReal}
+            />
           </div>
         </div>
 
