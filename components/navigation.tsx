@@ -12,9 +12,6 @@ const sections = [
   { id: "inicio", label: "Inicio", icon: "🏠" },
   { id: "nuestro-metodo", label: "Nuestro Método", icon: "🎯" },
   { id: "certificaciones", label: "Certificaciones", icon: "📜" },
-  { id: "clases-particulares", label: "Clases Particulares", icon: "👩‍🏫" },
-  { id: "trabajar-irlanda", label: "Trabajar en Irlanda", icon: "🇮🇪" },
-  { id: "erasmus", label: "Erasmus+", icon: "🇪🇺" },
   { id: "cursos", label: "Webinars", icon: "🎓" },
   { id: "contacto", label: "Contacto", icon: "📩" },
 ]

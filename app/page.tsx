@@ -5,11 +5,8 @@ import Navigation from "@/components/navigation"
 import Inicio from "@/components/sections/inicio"
 import NuestroMetodo from "@/components/sections/nuestro-metodo"
 import Certificaciones from "@/components/sections/certificaciones"
-import ClasesParticulares from "@/components/sections/clases-particulares"
-import TrabajarIrlanda from "@/components/sections/trabajar-irlanda"
 import Contacto from "@/components/sections/contacto"
 import Webinars from "@/components/sections/webinars"
-import Erasmus from "@/components/sections/erasmus"
 
 export default function HomePage() {
   const [activeSection, setActiveSection] = useState("inicio")
@@ -22,12 +19,6 @@ export default function HomePage() {
         return <NuestroMetodo />
       case "certificaciones":
         return <Certificaciones />
-      case "clases-particulares":
-        return <ClasesParticulares />
-      case "trabajar-irlanda":
-        return <TrabajarIrlanda />
-      case "erasmus":
-        return <Erasmus />
       case "cursos":
         return <Webinars />
       case "contacto":
