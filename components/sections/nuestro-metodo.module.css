@@ -1,0 +1,456 @@
+.section {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.methodOverview {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.overviewContent h2 {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.overviewContent p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+.methodSteps {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.stepNumber {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.step p {
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.stepList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.stepList li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #4a5568;
+}
+
+.stepList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: 700;
+}
+
+.methodology {
+  margin-bottom: 4rem;
+}
+
+/* New styles for the 4 pillars structure */
+.pillarsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.pillarSection {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillarSection:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.pillarHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.pillarIcon {
+  font-size: 3rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.pillarHeader h2 {
+  font-size: 2rem;
+  color: #2d3748;
+  margin: 0;
+  font-weight: 700;
+}
+
+.pillarContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.feature p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin: 0;
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pillar {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.pillar:hover {
+  transform: scale(1.05);
+}
+
+.technology {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.techContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.techText p {
+  font-size: 1.125rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.techList {
+  list-style: none;
+  padding: 0;
+}
+
+.techList li {
+  padding: 0.75rem 0;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.techList strong {
+  color: #2d3748;
+}
+
+.techVisual {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.techCard {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.techCardIcon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.techCard p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.results {
+  margin-bottom: 4rem;
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.resultCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resultNumber {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.resultCard p {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.secondaryButton {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.secondaryButton:hover {
+  background: white;
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1rem 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .methodOverview {
+    padding: 2rem;
+  }
+
+  .stepsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .techContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta h2 {
+    font-size: 1.75rem;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .pillarSection {
+    padding: 2rem;
+  }
+
+  .pillarHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .pillarHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .pillarIcon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .feature h3 {
+    font-size: 1.25rem;
+  }
+
+  .feature p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,292 @@
+.section {
+  padding: 2rem 0;
+  min-height: calc(100vh - 64px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.onlineAdvantages {
+  margin-bottom: 4rem;
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.onlineAdvantages h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.advantagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.advantage {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.advantageIcon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.advantage h3 {
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.advantage p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.certificationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.certificationCard {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.certificationCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cardHeader {
+  background: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.certificationName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.certificationLevels {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.details {
+  margin-bottom: 1.5rem;
+}
+
+.detail {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail strong {
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modalityList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modalityList li {
+  background: var(--surface);
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.advantages strong {
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.advantagesList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantagesList li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.checkmark {
+  color: var(--success-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cardFooter {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.infoButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.infoButton:hover {
+  background: var(--primary-hover);
+}
+
+.cta {
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.ctaButton {
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .advantagesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificationsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .cta {
+    padding: 2rem 1rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+}

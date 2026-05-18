@@ -1,0 +1,902 @@
+.section {
+  padding: 2rem 0;
+  min-height: calc(100vh - 64px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.personalizedApproach {
+  background: var(--surface);
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 4rem;
+}
+
+.approachContent h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.approachContent p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.benefitIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.benefit h3 {
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.benefit p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+.educationLevels {
+  margin-bottom: 4rem;
+}
+
+.educationLevels h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.levelsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.levelCard {
+  background: var(--background);
+  border: 2px solid var(--border);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  transition: var(--transition);
+}
+
+.levelCard:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.levelHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.levelIcon {
+  font-size: 3rem;
+}
+
+.levelTitle {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.levelDescription {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.characteristics h4 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.characteristicsList {
+  list-style: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+.characteristicsList li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.checkmark {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.levelButton {
+  width: 100%;
+  padding: 0.875rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.levelButton:hover {
+  background: var(--primary-hover);
+}
+
+.methodology {
+  margin-bottom: 4rem;
+}
+
+.methodology h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.methodologySteps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.stepNumber {
+  background: var(--primary-color);
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.stepContent h3 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.stepContent p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.cta {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  font-size: 1rem;
+}
+
+.primaryButton {
+  background: white;
+  color: var(--primary-color);
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.secondaryButton {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondaryButton:hover {
+  background: white;
+  color: var(--primary-color);
+}
+
+.levelSelector {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.levelSelector h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.levelButtonsContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.levelSelectorButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: var(--background);
+  border: 2px solid var(--border);
+  border-radius: var(--border-radius);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.levelSelectorButton:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.levelSelectorButton.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.selectorIcon {
+  font-size: 1.5rem;
+}
+
+.selectedLevelDetails {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(245, 158, 11, 0.05));
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 3rem;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.detailsCard {
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.detailsHeader h3 {
+  color: var(--text-primary);
+  margin: 0 0 0.75rem 0;
+  font-size: 1.125rem;
+}
+
+.detailsCard p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.priceHighlight {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  font-weight: 700 !important;
+}
+
+.priceNote {
+  font-size: 0.875rem;
+  color: var(--success-color);
+  margin-top: 0.5rem !important;
+}
+
+.characteristicsSection {
+  background: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.characteristicsSection h3 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.characteristicsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.characteristicItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(37, 99, 235, 0.05);
+  border-radius: calc(var(--border-radius) / 2);
+  color: var(--text-secondary);
+}
+
+.characteristicItem span:first-child {
+  color: var(--primary-color);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.scheduleSection {
+  margin: 4rem 0;
+}
+
+.scheduleSection h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.scheduleSubtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scheduleList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.scheduleDay {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.scheduleDayButton {
+  width: 100%;
+  padding: 1.25rem;
+  background: var(--background);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.scheduleDayButton:hover {
+  background: rgba(37, 99, 235, 0.05);
+}
+
+.dayName {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.dayExpander {
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.scheduleContent {
+  background: rgba(37, 99, 235, 0.02);
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeSlotGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem; /* Added margin to separate from other content */
+}
+
+.timeSlotItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--background);
+  padding: 1rem;
+  border-radius: calc(var(--border-radius) / 2);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.timeSlotItem:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+}
+
+.timeSlotText {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.scheduleContent p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  word-spacing: 0.1em;
+}
+
+.reserveButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: calc(var(--border-radius) / 2);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.875rem;
+}
+
+.reserveButton:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.reservedButton {
+  background: var(--border);
+  color: var(--text-secondary);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.reservedButton:hover {
+  background: var(--border);
+  transform: none;
+}
+
+.testimonialsSection {
+  margin: 4rem 0;
+  background: rgba(37, 99, 235, 0.02);
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.testimonialsSection h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonialCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ratingStars {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.ratingStars span {
+  color: #fbbf24;
+}
+
+.testimonialText {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.testimonialAuthor strong {
+  color: var(--text-primary);
+}
+
+.testimonialLevel {
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Added modal and form styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modalContent {
+  background: var(--background);
+  border-radius: var(--border-radius);
+  padding: 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease-out;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modalClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.modalClose:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+}
+
+.modalTitle {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.modalSubtitle {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.required {
+  color: #ef4444;
+}
+
+.formInput,
+.formSelect {
+  padding: 0.75rem;
+  border: 2px solid var(--border);
+  border-radius: calc(var(--border-radius) / 2);
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--background);
+  transition: var(--transition);
+}
+
+.formInput:focus,
+.formSelect:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.formSelect {
+  cursor: pointer;
+}
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cancelButton,
+.submitButton {
+  flex: 1;
+  padding: 0.875rem;
+  border-radius: calc(var(--border-radius) / 2);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  font-size: 1rem;
+}
+
+.cancelButton {
+  background: var(--surface);
+  color: var(--text-primary);
+  border: 2px solid var(--border);
+}
+
+.cancelButton:hover {
+  background: var(--border);
+}
+
+.submitButton {
+  background: var(--primary-color);
+  color: white;
+}
+
+.submitButton:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .levelsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .methodologySteps {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .levelButtonsContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .levelSelectorButton {
+    justify-content: center;
+  }
+
+  .detailsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .characteristicsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .scheduleList {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .selectedLevelDetails {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Adjustments for time slot grid on smaller screens */
+  .timeSlotGrid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .modalContent {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .formActions {
+    flex-direction: column;
+  }
+
+  .modalTitle {
+    font-size: 1.5rem;
+  }
+}
